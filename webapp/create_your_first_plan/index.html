@@ -11,24 +11,12 @@
 
   <div id="header"></div>
 
-  <video id="player" controls playsinline>
-    <source src="create_your_first_plan.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="YOUR_YOUTUBE_VIDEO_ID_HERE"></div>
 
   <div id="footer"></div>
 
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
   <script src="/videos/shared/scripts.js"></script>
-  <script>
-    const player = new Plyr('#player');
-    fetch('/videos/shared/header.html').then(r => r.text()).then(t => {
-      document.getElementById('header').innerHTML = t;
-    });
-    fetch('/videos/shared/footer.html').then(r => r.text()).then(t => {
-      document.getElementById('footer').innerHTML = t;
-    });
-  </script>
 
 </body>
 </html>
