@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'airplay',
         'fullscreen'
       ],
+      fullscreen: {
+        enabled: true,     // Ensure fullscreen is enabled
+        fallback: true,    // Use fallback if native is not supported
+        iosNative: true    // IMPORTANT: Try to use native iOS fullscreen
+      },
       youtube: {
         rel: 0,                 // Keep related videos suppressed
         showinfo: 0,            // Hide video title and uploader

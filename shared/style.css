@@ -50,7 +50,28 @@ video {
   These resets help ensure our rules for the embedded state don't interfere.
 */
 .plyr--fullscreen-active {
-  min-width: initial !important;
-  max-width: initial !important;
-  /* Plyr usually sets width and height to 100% for fullscreen */
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important; /* Override any min-width from non-fullscreen */
+  max-width: 100% !important; /* Override any max-width from non-fullscreen */
+  background-color: #000 !important; /* Ensure a black background */
+  z-index: 2147483647 !important; /* Typically the highest possible z-index */
+  /* Reset padding/margin that might be inherited or set by other rules */
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.plyr--fullscreen-active .plyr__video-wrapper,
+.plyr--fullscreen-active .plyr__video-embed,
+.plyr--fullscreen-active .plyr__video-embed iframe {
+  width: 100% !important;
+  height: 100% !important;
+  /* Ensure no extra padding/margin on these inner elements either */
+  padding: 0 !important;
+  margin: 0 !important;
 }
