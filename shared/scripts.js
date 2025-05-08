@@ -52,23 +52,40 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch(error => console.error('Error fetching or injecting header:', error));
 
-    // Fetch and inject footer
-    fetch('/videos/shared/footer.html')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status} for footer.html`);
-        }
-        return response.text();
-      })
-      .then(html => {
-        const footerDiv = document.getElementById('footer');
-        if (footerDiv) {
-          footerDiv.innerHTML = html;
-        } else {
-          console.warn('Footer div not found');
-        }
-      })
-      .catch(error => console.error('Error fetching or injecting footer:', error));
+    // Check if the page is in an iframe or if a specific URL parameter is present
+    const isInIframe = window.self !== window.top;
+    const urlParams = new URLSearchParams(window.location.search);
+    const shouldHideFooterParam = urlParams.get('hide_footer') === 'true';
+
+    if (isInIframe || shouldHideFooterParam) {
+      if (isInIframe) {
+        console.log('Page is in an iframe, not loading shared footer.');
+      }
+      if (shouldHideFooterParam) {
+        console.log('URL parameter hide_footer=true found, not loading shared footer.');
+      }
+      // Optionally, you could hide the footer div if it has predefined empty space
+      // const footerDiv = document.getElementById('footer');
+      // if (footerDiv) footerDiv.style.display = 'none'; 
+    } else {
+      // Fetch and inject footer only if not in an iframe AND no hide_footer parameter
+      fetch('/videos/shared/footer.html')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status} for footer.html`);
+          }
+          return response.text();
+        })
+        .then(html => {
+          const footerDiv = document.getElementById('footer');
+          if (footerDiv) {
+            footerDiv.innerHTML = html;
+          } else {
+            console.warn('Footer div not found');
+          }
+        })
+        .catch(error => console.error('Error fetching or injecting footer:', error));
+    }
   } else {
     console.warn('Plyr player element not found');
   }
