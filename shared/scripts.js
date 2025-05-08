@@ -34,19 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Wire up the external test play button
-    const testPlayButton = document.getElementById('test-play-button');
-    if (testPlayButton) {
-      testPlayButton.addEventListener('click', () => {
-        if (player && typeof player.play === 'function') {
-          console.log('Attempting to play video via external button...');
-          player.play();
-        } else {
-          console.error('Player object or player.play function is not available.');
-        }
-      });
-    }
-
     // Fetch and inject header
     fetch('/videos/shared/header.html')
       .then(response => {
