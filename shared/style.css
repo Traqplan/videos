@@ -37,11 +37,11 @@ video {
 .plyr__control--overlaid {
   z-index: 4 !important; /* Ensure it's above the control bar (z-index: 3 from Plyr) */
   left: auto; /* Remove default left: 50% */
-  right: 5%;  /* Position from the right edge (adjust percentage or use px) */
+  right: 25%;  /* Position from the right edge (adjust percentage or use px) */
   transform: translateY(-50%); /* Keep it vertically centered, remove translateX */
   /* If it's too large or you want to adjust its size/appearance: */
-  /* width: 60px; */ /* Example: set a fixed width */
-  /* height: 60px; */ /* Example: set a fixed height */
+  width: 60px;  /* Example: set a fixed width */
+  height: 60px; /* Example: set a fixed height */
   /* padding: 12px; */ /* Example: adjust padding if using SVG */
 }
 
