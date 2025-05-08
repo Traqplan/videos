@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (playerElement) {
     const player = new Plyr(playerElement, {
+      clickToPlay: true, // Explicitly enable click to play on the container
       // Standard Plyr controls (you can customize this array if needed)
       controls: [
         'play-large',
@@ -29,8 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
         modestbranding: 0,      // Show normal YouTube branding
         iv_load_policy: 3,      // Hide annotations
         // Plyr handles hiding YouTube's own controls by default to use its skin
+        // We could also try adding origin: window.location.origin here if click issues persist
       }
     });
+
+    // Wire up the external test play button
+    const testPlayButton = document.getElementById('test-play-button');
+    if (testPlayButton) {
+      testPlayButton.addEventListener('click', () => {
+        if (player && typeof player.play === 'function') {
+          console.log('Attempting to play video via external button...');
+          player.play();
+        } else {
+          console.error('Player object or player.play function is not available.');
+        }
+      });
+    }
 
     // Fetch and inject header
     fetch('/videos/shared/header.html')
