@@ -1,16 +1,49 @@
 body {
   font-family: sans-serif;
   background: #f5f5f5;
-  padding: 40px;
+  padding: 40px; /* Provides space around the content */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Centers flex items like the player */
 }
+
+/* 
+  This rule was for native <video> elements.
+  For Plyr with YouTube, #player (or .plyr--video) is the main container.
+*/
 video {
   width: 100%;
   max-width: 800px;
   aspect-ratio: 16/9;
 }
 
-/* The following styles that were added in the previous step will be removed */
-/* to restore original fullscreen behavior. */
+/* 
+  Ensures the main Plyr player container has a defined width
+  and is centered. This should help the control bar elements fit.
+*/
+#player.plyr, /* Target #player once Plyr has initialized it */
+.plyr--video {  /* General Plyr video container class */
+  width: 100%;
+  max-width: 800px; /* Adjust as needed for desired max video size */
+  min-width: 360px; /* Increased min-width slightly to give controls more room */
+  margin-left: auto;  /* For centering */
+  margin-right: auto; /* For centering */
+  /* Plyr's own CSS should handle aspect ratio for YouTube embeds.
+     If aspect ratio issues appear, we might need further styling here,
+     but carefully to avoid breaking fullscreen. */
+}
+
+/* Fix for the overlaid play button being hidden by the control bar */
+.plyr__control--overlaid {
+  z-index: 4 !important; /* Ensure it's above the control bar (z-index: 3 from Plyr) */
+}
+
+/* 
+  When Plyr is fullscreen, its own styles should take over for sizing.
+  These resets help ensure our rules for the embedded state don't interfere.
+*/
+.plyr--fullscreen-active {
+  min-width: initial !important;
+  max-width: initial !important;
+  /* Plyr usually sets width and height to 100% for fullscreen */
+}
