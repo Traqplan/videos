@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       youtube: {
         rel: 0,                 // Keep related videos suppressed
-        showinfo: 1,            // Show video title and uploader (helps access to YouTube page)
+        showinfo: 0,            // Hide video title and uploader
         modestbranding: 0,      // Show normal YouTube branding
         iv_load_policy: 3,      // Hide annotations
         // Plyr handles hiding YouTube's own controls by default to use its skin
