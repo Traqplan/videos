@@ -1,2 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Demo</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      background: #f5f5f5;
+    }
+    video {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16/9;
+    }
+  </style>
+</head>
+<body>
 
-hello world
+  <video id="player" controls playsinline>
+    <source src="webapp/create_your_first_plan/create_your_first_plan.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+ 
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    const player = new Plyr('#player');
+  </script>
+
+</body>
+</html>
+
