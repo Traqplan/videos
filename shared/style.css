@@ -33,15 +33,15 @@ video {
      but carefully to avoid breaking fullscreen. */
 }
 
-/* Fix for the overlaid play button being hidden by the control bar */
+/* Style the large overlaid play button */
 .plyr__control--overlaid {
-  z-index: 4 !important; /* Ensure it's above the control bar (z-index: 3 from Plyr) */
-  left: auto; /* Remove default left: 50% */
-  right: 25%;  /* Position from the right edge (adjust percentage or use px) */
-  transform: translateY(-50%); /* Keep it vertically centered, remove translateX */
-  /* If it's too large or you want to adjust its size/appearance: */
-  width: 60px;  /* Example: set a fixed width */
-  height: 60px; /* Example: set a fixed height */
+  display: none !important; /* Hide the large play button */
+  z-index: 4 !important; /* Ensure it's above the control bar (z-index: 3 from Plyr) - kept for consistency if display is changed back */
+  left: auto; /* Remove default left: 50% - kept for consistency */
+  right: 25%;  /* Position from the right edge (adjust percentage or use px) - kept for consistency */
+  transform: translateY(-50%); /* Keep it vertically centered, remove translateX - kept for consistency */
+  width: 60px;  /* Example: set a fixed width - kept for consistency */
+  height: 60px; /* Example: set a fixed height - kept for consistency */
   /* padding: 12px; */ /* Example: adjust padding if using SVG */
 }
 
