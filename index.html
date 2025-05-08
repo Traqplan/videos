@@ -2,36 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Video Demo</title>
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <title>Traqplan Video Library</title>
+  <link rel="stylesheet" href="shared/style.css" />
   <style>
     body {
       font-family: sans-serif;
-      display: flex;
-      justify-content: center;
       padding: 40px;
       background: #f5f5f5;
-    }
-    video {
-      width: 100%;
       max-width: 800px;
-      aspect-ratio: 16/9;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 20px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #0077cc;
+      font-size: 1.2em;
     }
   </style>
 </head>
 <body>
 
-  <video id="player" controls playsinline>
-    <source src="webapp/create_your_first_plan/create_your_first_plan.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
- 
-  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-  <script>
-    const player = new Plyr('#player');
-  </script>
+  <h1>Traqplan Video Library</h1>
+  <p>Select a video to watch:</p>
+  <ul>
+    <li><a href="webapp/create_your_first_plan/">Create Your First Plan</a></li>
+    <li><a href="webapp/plan_dependencies/">Plan Dependencies</a></li>
+    <li><a href="webapp/project_portfolio_view/">Project Portfolio View</a></li>
+  </ul>
 
 </body>
 </html>
-
