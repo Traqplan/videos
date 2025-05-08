@@ -12,26 +12,5 @@ video {
   aspect-ratio: 16/9;
 }
 
-/* Styles for the Plyr YouTube player container */
-#player,
-.plyr__video-embed {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio ( (9 / 16) * 100% ) */
-  height: 0;
-  overflow: hidden;
-  width: 100%;            /* Take up available width */
-  max-width: 800px;       /* Max width like the previous video tag */
-  background: #000;       /* Optional: Black background while loading */
-  margin-left: auto;      /* Center if parent is block and has text-align: center */
-  margin-right: auto;     /* Center if parent is block and has text-align: center */
-}
-
-#player iframe,
-.plyr__video-embed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0; /* Remove iframe border */
-}
+/* The following styles that were added in the previous step will be removed */
+/* to restore original fullscreen behavior. */
