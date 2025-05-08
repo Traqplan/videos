@@ -1,9 +1,0 @@
- creating a new project plan in traqplan is easy! :)
-just click in the new button
-you can either import from project or create a new one
-we will go for my first project
-put it into the program...
-...let's call it 'Demos' and click 'Create project'
-you will have three activities created by default
-one is a milestone and two of them are tasks
-it's as simple as that!  (Have fun! :)

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traqplan - Project Portfolio View</title>
+  <link rel="stylesheet" href="/video-site/shared/style.css" />
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <video id="player" controls playsinline>
+    <source src="project_portfolio_view.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script src="/video-site/shared/scripts.js"></script>
+  <script>
+    const player = new Plyr('#player');
+    fetch('/video-site/shared/header.html').then(r => r.text()).then(t => {
+      document.getElementById('header').innerHTML = t;
+    });
+    fetch('/video-site/shared/footer.html').then(r => r.text()).then(t => {
+      document.getElementById('footer').innerHTML = t;
+    });
+  </script>
+
+</body>
+</html>
