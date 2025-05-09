@@ -13,7 +13,7 @@ body {
 */
 video {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   aspect-ratio: 16/9;
 }
 
@@ -24,7 +24,7 @@ video {
 #player.plyr, /* Target #player once Plyr has initialized it */
 .plyr--video {  /* General Plyr video container class */
   width: 100%;
-  max-width: 800px; /* Adjust as needed for desired max video size */
+  max-width: 1000px; /* Adjust as needed for desired max video size */
   min-width: 360px; /* Increased min-width slightly to give controls more room */
   margin-left: auto;  /* For centering */
   margin-right: auto; /* For centering */
