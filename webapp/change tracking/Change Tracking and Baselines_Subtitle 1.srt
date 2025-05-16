@@ -1,0 +1,244 @@
+1
+01:00:02,375 --> 01:00:04,083
+<b>So in this video, we're going to look at</b>
+
+2
+01:00:04,083 --> 01:00:06,083
+<b>how we change plans,</b>
+
+3
+01:00:06,083 --> 01:00:08,000
+<b>how we track changes across them,</b>
+
+4
+01:00:08,000 --> 01:00:09,833
+<b>how traqplan is really just</b>
+
+5
+01:00:09,833 --> 01:00:11,833
+<b>amazing at showing the changes</b>
+
+6
+01:00:11,958 --> 01:00:13,166
+<b>between projects from one</b>
+
+7
+01:00:13,166 --> 01:00:14,666
+<b>reporting period to the next.</b>
+
+8
+01:00:15,166 --> 01:00:17,541
+<b> if we expand a simple event plan,</b>
+
+9
+01:00:17,541 --> 01:00:18,583
+<b>we can see more than</b>
+
+10
+01:00:18,583 --> 01:00:19,625
+<b>one version in that plan.</b>
+
+11
+01:00:20,041 --> 01:00:20,750
+<b>Right now, we're gonna</b>
+
+12
+01:00:20,750 --> 01:00:21,791
+<b>make some changes to it</b>
+
+13
+01:00:21,791 --> 01:00:22,500
+<b>and watch what happens</b>
+
+14
+01:00:22,500 --> 01:00:23,541
+<b>as we make those changes.</b>
+
+15
+01:00:24,041 --> 01:00:27,500
+<b>Here, we will move the venue.</b>
+
+16
+01:00:27,750 --> 01:00:28,875
+<b>So we shall pull up back</b>
+
+17
+01:00:28,875 --> 01:00:29,833
+<b>to the left a little bit.</b>
+
+18
+01:00:31,875 --> 01:00:33,166
+<b>And for some others, we</b>
+
+19
+01:00:33,166 --> 01:00:34,041
+<b>think that the infrastructure</b>
+
+20
+01:00:34,416 --> 01:00:35,875
+<b>is going to take a little bit longer.</b>
+
+21
+01:00:36,208 --> 01:00:37,583
+<b>So let's move that to the right.</b>
+
+22
+01:00:39,375 --> 01:00:40,250
+<b>And you can see if we</b>
+
+23
+01:00:40,250 --> 01:00:41,458
+<b>flip between those two [versions] ,</b>
+
+24
+01:00:42,791 --> 01:00:43,666
+<b>the venue is moving.</b>
+
+25
+01:00:44,625 --> 01:00:45,791
+<b>And also, the</b>
+
+26
+01:00:45,791 --> 01:00:47,791
+<b>infrastructure change we've just made</b>
+
+27
+01:00:47,791 --> 01:00:49,208
+<b>is also really clearly shown.</b>
+
+28
+01:00:54,625 --> 01:00:55,166
+<b>But there's a better</b>
+
+29
+01:00:55,166 --> 01:00:56,583
+<b>way to actually show these</b>
+
+30
+01:00:56,666 --> 01:00:57,416
+<b>without having to flip</b>
+
+31
+01:00:57,416 --> 01:00:59,625
+<b>between one view and another.</b>
+
+32
+01:00:59,958 --> 01:01:00,875
+<b>And that is simply to</b>
+
+33
+01:01:00,875 --> 01:01:02,875
+<b>make the older version</b>
+
+34
+01:01:03,083 --> 01:01:04,125
+<b>a comparison baseline.</b>
+
+35
+01:01:06,083 --> 01:01:07,416
+<b>And once we do that, you</b>
+
+36
+01:01:07,416 --> 01:01:09,375
+<b>can see that what has appeared</b>
+
+37
+01:01:09,541 --> 01:01:11,291
+<b>is a green line showing</b>
+
+38
+01:01:11,291 --> 01:01:14,125
+<b>that venue has got better [ie. happening sooner than it was before]</b>
+
+39
+01:01:14,375 --> 01:01:15,000
+<b>in the most recent</b>
+
+40
+01:01:15,000 --> 01:01:17,125
+<b>version, and some red lines</b>
+
+41
+01:01:17,291 --> 01:01:19,041
+<b>showing that the infrastructure project</b>
+
+42
+01:01:19,041 --> 01:01:20,541
+<b>has slipped a little bit.</b>
+
+43
+01:01:23,375 --> 01:01:24,583
+<b>That is by far the cleanest</b>
+
+44
+01:01:24,583 --> 01:01:25,833
+<b> way of showing changes</b>
+
+45
+01:01:25,958 --> 01:01:27,625
+<b>between one view and another.</b>
+
+46
+01:01:28,041 --> 01:01:29,083
+<b>And this is really important,</b>
+
+47
+01:01:29,625 --> 01:01:30,916
+<b>because the first time you show Traqplan</b>
+
+48
+01:01:30,916 --> 01:01:31,833
+<b>to your bosses,</b>
+
+49
+01:01:32,291 --> 01:01:33,125
+<b>they're gonna love it.</b>
+
+50
+01:01:33,416 --> 01:01:34,875
+<b>But the second month you show them,</b>
+
+51
+01:01:35,375 --> 01:01:35,875
+<b>they're gonna say it still looks great,</b>
+
+52
+01:01:35,875 --> 01:01:36,833
+<b>they're gonna say it still looks great,</b>
+
+53
+01:01:36,833 --> 01:01:37,875
+<b>but what's changed?</b>
+
+54
+01:01:39,833 --> 01:01:41,666
+<b>and this works for Microsoft project</b>
+
+55
+01:01:41,666 --> 01:01:43,750
+<b>imports, it'll soon work for Primavera P6</b>
+
+56
+01:01:43,750 --> 01:01:46,541
+<b>and any plans you made on</b>
+
+57
+01:01:46,541 --> 01:01:47,500
+<b>Traqplan natively</b>
+
+58
+01:01:47,500 --> 01:01:49,333
+<b>and with our free trials</b>
+
+59
+01:01:49,333 --> 01:01:51,875
+<b>and our free tier there's no excuse for</b>
+
+60
+01:01:51,875 --> 01:01:53,250
+<b>not leveling up your stakeholder</b>
+
+61
+01:01:53,333 --> 01:01:56,083
+<b>communications. Join us at traqplan.com</b>
+
